@@ -8,9 +8,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "typescript": "^4.8.4",
-    "vue": "^3.2.40"
-  }
+  "license": "ISC"
 }

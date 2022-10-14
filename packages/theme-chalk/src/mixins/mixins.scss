@@ -1,3 +1,14 @@
 // 公共的scss
 @use 'config' as *;
 @forward 'config';
+
+/* CDN 服务仅供平台体验和调试使用，平台不承诺服务的稳定性，企业客户需下载字体包自行发布使用并做好备份。 */
+@font-face {
+  font-family: "阿里巴巴普惠体 2.0 65 Medium";
+  font-weight: 500;
+  src: url("../fonts/fT4MoFNaTje8NhxAFtTOY.woff2") format("woff2"),url("../fonts/fT4MoFNaTje8NhxAFtTOY.woff") format("woff");
+  font-display: swap;
+}
+*{
+  font-family: "阿里巴巴普惠体 2.0 65 Medium";
+}

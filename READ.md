@@ -32,5 +32,9 @@ pnpm install gulp @types/gulp sucrase -w -D
 ```
 > 1 将sass打包css
 ```
-pnpm install sass gulp-sass @types/gulp-sass @types/sass @types/autoprefixter gulp-autoprefixer @types/gulp-clean-css gulp-clean-css -w -D
+// 安装依赖
+pnpm install sass gulp-sass @types/gulp-sass @types/sass @types/autoprefixer gulp-autoprefixer @types/gulp-clean-css gulp-clean-css -w -D
+
+// 执行脚本
+pnpm run  --filter "./packages/**" --parallel build 
 ```
