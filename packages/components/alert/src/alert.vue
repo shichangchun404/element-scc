@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="scc-alert">
     <div>{{title}}</div>
     <p>{{message}}</p>
   </div>

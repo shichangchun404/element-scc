@@ -1,5 +1,7 @@
 <template>
-  <div>{{message}}</div>
+  <div class="scc-message">
+    <p>{{message}}</p>
+  </div>
 </template>
 <script lang="ts">
 import { computed, defineComponent } from 'vue'

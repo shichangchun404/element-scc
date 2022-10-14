@@ -1,0 +1,5 @@
+@use './mixins/mixins.scss' as *;
+
+.#{$namespace}-alert{
+  color: red;
+}

@@ -24,3 +24,13 @@ pnpm create vite play --template vue-ts
     "dev": "pnpm -C play dev"
   },
 ```
+
+### 打包流程
+> 利用gulp做代码转换
+```
+pnpm install gulp @types/gulp sucrase -w -D
+```
+> 1 将sass打包css
+```
+pnpm install sass gulp-sass @types/gulp-sass @types/sass @types/autoprefixter gulp-autoprefixer @types/gulp-clean-css gulp-clean-css -w -D
+```

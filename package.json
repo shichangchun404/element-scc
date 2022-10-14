@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "play": "pnpm -C play dev",
-    "docs": "pnpm -C play dev"
+    "docs": "pnpm -C play dev",
+    "build": "gulp -f build/gulpfile.ts"
   },
   "keywords": [],
   "author": "",
@@ -16,5 +17,11 @@
     "@shicc/utils": "workspace:^1.0.0",
     "typescript": "^4.8.4",
     "vue": "^3.2.40"
+  },
+  "devDependencies": {
+    "@types/gulp": "^4.0.9",
+    "gulp": "^4.0.2",
+    "sass": "^1.55.0",
+    "sucrase": "^3.28.0"
   }
 }
