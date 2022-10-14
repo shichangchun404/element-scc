@@ -6,7 +6,8 @@
 
 <template>
   <div>
-   HelloWorld
+    <SccAlert title="标题" message="信息"></SccAlert>
+    <SccMessage message="我是message信息"></SccMessage>
   </div>
  
 </template>
