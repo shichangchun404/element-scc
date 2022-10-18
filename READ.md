@@ -26,7 +26,7 @@ pnpm create vite play --template vue-ts
 ```
 
 ### 打包流程
-> 利用gulp做代码转换
+> 利用构建工具gulp做代码转换
 ```
 pnpm install gulp @types/gulp sucrase -w -D
 ```
@@ -38,3 +38,16 @@ pnpm install sass gulp-sass @types/gulp-sass @types/sass @types/autoprefixer gul
 // 执行脚本
 pnpm run  --filter "./packages/**" --parallel build 
 ```
+> 2 打包packages下的utils
+```
+// 安装依赖
+pnpm install gulp-typescript -w -D
+
+```
+在utils目录下创建gulpfile.ts执行文件，在packages.json中配置构建指令
+```
+"scripts": {
+  "build": "gulp"
+},
+```
+> 3 打包packages下的components
