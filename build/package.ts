@@ -7,8 +7,6 @@ import { outDir, projectRoot } from './utils/path'
 import { withTaskName } from './utils'
 
 export const buildPackages = (dirname, name)=> {
-  console.log('== buildPackages ', dirname, name)
-
   // 拿到模块配置
   const tasks = Object.entries(buildConfig).map(([module,config])=>{
     const output = resolve(dirname, config.output.name)
@@ -16,15 +14,15 @@ export const buildPackages = (dirname, name)=> {
       withTaskName(`build:${module}`, ()=>{
         const tsConfig = resolve(projectRoot, 'tsconfig.json') // ts配置文件路径
         const inputs = ['**/*.ts', '!gulpfile.ts', '!node_modules']
-        
         return src(inputs).pipe(gulpTs.createProject(tsConfig, {
           declaration: true,
           strict: false,
           module: config.module
         })()).pipe(dest(output))
       }),
+      
       withTaskName(`copy:${module} ${dirname}`, ()=>{
-        return src(`${output}/**`).pipe(dest(resolve(outDir, name, config.output.name)))
+        return src(`${output}/**`).pipe(dest(resolve(outDir, config.output.name, name)))
       })
     )
   })

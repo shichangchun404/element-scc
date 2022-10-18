@@ -1,5 +1,35 @@
 @use './mixins/mixins.scss' as *;
 
 .#{$namespace}-alert{
-  color: red;
+  width: 300px;
+  border: 1px solid #efefef;
+  padding: 10px;
+  .tilte {
+    color: #000000;
+    font-size: 16px;
+    font-weight: 600px;
+    text-align: left;
+  }
+  .message{
+    color: #333333;
+    font-size: 14px;
+  }
+  .btn{
+    padding: 4px 10px;
+    border: 1px solid #efefef;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  .btn-wrap{
+    display: flex;
+    justify-content: end;
+    .btn-cancle{
+
+    }
+    .btn-submit{
+      background-color: #220ed5;
+      color: #ffffff;
+    }
+  }
 }

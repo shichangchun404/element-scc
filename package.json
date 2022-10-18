@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "play": "pnpm -C play dev",
-    "docs": "pnpm -C play dev",
+    "play:dev": "pnpm -C play dev",
+    "docs:dev": "pnpm -C play dev",
     "build": "gulp -f build/gulpfile.ts"
   },
   "keywords": [],
