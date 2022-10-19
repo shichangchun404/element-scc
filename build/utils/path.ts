@@ -1,5 +1,10 @@
-import path from 'path'
+import { resolve } from 'path'
 
-export const projectRoot = path.resolve(__dirname,'../../')
+export const projectRoot = resolve(__dirname,'../../')
+export const pkgRoot = resolve(projectRoot, 'packages')
+export const compRoot = resolve(pkgRoot, 'components')
+export const themeRoot = resolve(pkgRoot, 'theme-chalk')
+export const hookRoot = resolve(pkgRoot, 'hooks')
 
-export const outDir = path.resolve(__dirname,'../../dist')
+// dist
+export const buildOutput = resolve(projectRoot,'dist')

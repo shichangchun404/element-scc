@@ -51,3 +51,6 @@ pnpm install gulp-typescript -w -D
 },
 ```
 > 3 打包packages下的components
+```
+pnpm install fast-glob rollup unplugin-vue-macros @vitejs/plugin-vue @vitejs/plugin-vue-jsx @rollup/plugin-node-resolve @rollup/plugin-commonjs rollup-plugin-esbuild  -w -D
+```

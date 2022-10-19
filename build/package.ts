@@ -3,8 +3,9 @@ import { resolve } from 'path'
 import { series, parallel, src, dest } from 'gulp'
 import gulpTs from 'gulp-typescript'
 import { buildConfig } from './utils/config'
-import { outDir, projectRoot } from './utils/path'
+import { buildOutput, compRoot, projectRoot } from './utils/path'
 import { withTaskName } from './utils'
+import { buildModules } from './utils/rollup'
 
 export const buildPackages = (dirname, name)=> {
   // 拿到模块配置
@@ -22,9 +23,17 @@ export const buildPackages = (dirname, name)=> {
       }),
       
       withTaskName(`copy:${module} ${dirname}`, ()=>{
-        return src(`${output}/**`).pipe(dest(resolve(outDir, config.output.name, name)))
+        return src(`${output}/**`).pipe(dest(resolve(buildOutput, config.output.name, name)))
       })
     )
   })
   return parallel(...tasks)
+}
+
+export const buildComponents = () => {
+  return series(
+    withTaskName(`build:components`, async ()=>{
+      buildModules()
+    })
+  )
 }

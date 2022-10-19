@@ -14,5 +14,4 @@ export const run = async (command:string)=>{
     })
     app.on('close',resolve)
   })
-  
 }

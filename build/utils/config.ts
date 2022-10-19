@@ -1,22 +1,24 @@
 import { resolve } from 'path'
-import { outDir } from './path'
+import { buildOutput } from './path'
 
 export const buildConfig = {
   esm: {
     module: 'ESNext', // tsconfig输出的结果ES模块
     format: 'esm', // 配置格式化后的模块规范
+    ext: 'mjs',
     output: {
       name: 'es', // 打包到path目录（dist）下的哪个目录
-      path: resolve(outDir,"es") 
+      path: resolve(buildOutput,"es") 
     },
     bundle: 'shicc/es'
   },
   cjs: {
     module: 'CommonJS',
     format: 'cjs',
+    ext: 'js',
     output: {
       name: 'lib',
-      path: resolve(outDir,"lib")
+      path: resolve(buildOutput,"lib")
     },
     bundle: 'shicc/lib'
   }

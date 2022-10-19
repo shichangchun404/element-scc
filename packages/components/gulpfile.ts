@@ -1,3 +1,3 @@
-import { buildPackages } from "../../build/package"
+import { buildComponents } from "../../build/package"
 
-export default buildPackages(__dirname, 'components')
+export default buildComponents()
