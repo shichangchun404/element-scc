@@ -3,14 +3,14 @@ import { resolve } from 'path'
 import { series, parallel, src, dest } from 'gulp'
 import gulpTs from 'gulp-typescript'
 import { buildConfig } from './utils/config'
-import { buildOutput, compRoot, projectRoot } from './utils/path'
+import { buildOutput, compRoot, projectRoot, utilsRoot } from './utils/path'
 import { withTaskName } from './utils'
 import { buildModules } from './utils/rollup'
 
-export const buildPackages = (dirname, name)=> {
+export const buildUtils = (dirname, name)=> {
   // 拿到模块配置
   const tasks = Object.entries(buildConfig).map(([module,config])=>{
-    const output = resolve(dirname, config.output.name)
+    const output = resolve(dirname,'dist', config.output.name)
     return series(
       withTaskName(`build:${module}`, ()=>{
         const tsConfig = resolve(projectRoot, 'tsconfig.json') // ts配置文件路径

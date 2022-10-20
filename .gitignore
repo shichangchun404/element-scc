@@ -1,7 +1,5 @@
 node_modules
-**/node_modules 
-packages/**/es
-packages/**/lib
+**/node_modules
 
 # Logs
 logs
