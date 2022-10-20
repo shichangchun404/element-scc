@@ -6,7 +6,7 @@
 
 <template>
   <div>
-    <SccAlert title="标题" message="信息"></SccAlert>
+    <SccAlert title="标题" message="信息" isShow=true></SccAlert>
     <SccMessage message="我是message信息"></SccMessage>
   </div>
  

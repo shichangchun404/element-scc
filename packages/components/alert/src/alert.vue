@@ -1,5 +1,5 @@
 <template>
-  <div class="scc-alert">
+  <div class="scc-alert" v-if="isShow">
     <div class="tilte">{{title}}</div>
     <p class="message">{{message}}</p>
     <div class="btn-wrap">
@@ -15,6 +15,9 @@ export default defineComponent({
   name: 'SccAlert',
   props: alertProps,
   setup(props) {
+    let isShow = computed(()=>{
+      return props.isShow
+    })
     const title = computed(()=>{
       return props.title
     })
