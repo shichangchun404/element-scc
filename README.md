@@ -10,7 +10,7 @@ pnpm install vue typescript
 > 初始化ts配置文件 pnpm tsc --init
 > 创建pnpm-workspace.yaml文件，配置项目组件目录。
 > 根目录引用项目中的依赖
-pnpm install @shicc/components @shicc/theme-chalk @shicc/utils  -w
+pnpm install @element-scc/components @element-scc/theme-chalk @element-scc/utils  -w
 
 ### 二 搭建测试环境
 > 在项目根目录play里单独起一个vue项目

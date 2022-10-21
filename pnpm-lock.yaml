@@ -4,12 +4,12 @@ importers:
 
   .:
     specifiers:
+      '@element-scc/components': workspace:^1.0.0
+      '@element-scc/theme-chalk': workspace:^1.0.0
+      '@element-scc/utils': workspace:^1.0.0
       '@pnpm/types': ^8.8.0
       '@rollup/plugin-commonjs': ^23.0.0
       '@rollup/plugin-node-resolve': ^15.0.0
-      '@shicc/components': workspace:^1.0.0
-      '@shicc/theme-chalk': workspace:^1.0.0
-      '@shicc/utils': workspace:^1.0.0
       '@types/autoprefixer': ^10.2.0
       '@types/gulp': ^4.0.9
       '@types/gulp-clean-css': ^4.3.0
@@ -18,6 +18,7 @@ importers:
       '@vitejs/plugin-vue': ^3.1.0
       '@vitejs/plugin-vue-jsx': ^2.0.1
       D: ^1.0.0
+      element-scc: workspace:^1.0.0
       esbuild: ^0.15.11
       fast-glob: ^3.2.12
       gulp: ^4.0.2
@@ -36,11 +37,12 @@ importers:
       vite: ^3.1.0
       vue: ^3.2.40
     dependencies:
+      '@element-scc/components': link:packages/components
+      '@element-scc/theme-chalk': link:packages/theme-chalk
+      '@element-scc/utils': link:packages/utils
       '@pnpm/types': 8.8.0
-      '@shicc/components': link:packages/components
-      '@shicc/theme-chalk': link:packages/theme-chalk
-      '@shicc/utils': link:packages/utils
       D: 1.0.0
+      element-scc: link:packages/element-scc
       typescript: 4.8.4
       vue: 3.2.40
     devDependencies:

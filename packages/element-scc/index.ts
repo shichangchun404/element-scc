@@ -1,4 +1,4 @@
-export * from '@shicc/components'
+export * from '@element-scc/components'
 import components from './components'
 
 export const install =(app)=> {

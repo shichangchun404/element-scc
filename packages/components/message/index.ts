@@ -1,4 +1,4 @@
-import { withInstall } from '@shicc/utils/withInstall'
+import { withInstall } from '@element-scc/utils/withInstall'
 import message from './src/message.vue'
 
 export const SccMessage = withInstall(message)
