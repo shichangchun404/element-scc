@@ -54,3 +54,16 @@ pnpm install gulp-typescript -w -D
 ```
 pnpm install fast-glob rollup unplugin-vue-macros @vitejs/plugin-vue @vitejs/plugin-vue-jsx @rollup/plugin-node-resolve @rollup/plugin-commonjs rollup-plugin-esbuild  -w -D
 ```
+
+### 发布流程
+> 1 添加.npmignore文件，设置npm忽略文件
+```
+
+```
+>
+```
+安装nrm（npm源管理） npm install -g nrm
+查看现有的npm源 nrm ls
+使用nrm use name（name是需要切换源的名字）切换代码仓库,比如nrm use taobao
+pnpm login 
+```

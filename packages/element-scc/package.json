@@ -1,6 +1,6 @@
 {
   "name": "element-scc",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A Component Library for Vue 3 by shichangchun",
   "main": "lib/index.js",
   "module": "es/index.mjs",
@@ -17,6 +17,10 @@
     "ui",
     "vue"
   ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shichangchun404/element-scc.git"
+  },
   "author": "shichangchun",
-  "license": "ISC"
+  "license": "MIT"
 }
