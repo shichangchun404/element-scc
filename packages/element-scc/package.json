@@ -1,6 +1,6 @@
 {
   "name": "element-scc",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A Component Library for Vue 3 by shichangchun",
   "main": "lib/index.js",
   "module": "es/index.mjs",
