@@ -6,8 +6,8 @@ import App from './App.vue'
 // import { SccAlert } from '@shicc/components'
 
 // import SccUI from '../../dist/es/index.mjs'
-import { SccAlert } from '../../dist/es/index.mjs'
-import '../../dist/theme-chalk/css/index.css'
+import { SccAlert } from '../../dist/element-scc/es/index.mjs'
+import '../../dist/element-scc/theme-chalk/css/index.css'
 
 const app = createApp(App)
 // app.use(SccUI)

@@ -1,0 +1,22 @@
+{
+  "name": "element-scc",
+  "version": "1.0.0",
+  "description": "A Component Library for Vue 3 by shichangchun",
+  "main": "lib/index.js",
+  "module": "es/index.mjs",
+  "types": "es/index.d.ts",
+  "peerDependencies": {
+    "vue": "^3.2.0"
+  },
+  "dependencies":{},
+  "keywords": [
+    "element-scc",
+    "element",
+    "component library",
+    "ui framework",
+    "ui",
+    "vue"
+  ],
+  "author": "shichangchun",
+  "license": "ISC"
+}

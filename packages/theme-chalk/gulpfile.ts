@@ -4,6 +4,7 @@ import dartSass from 'sass'
 import gulpAutoprefixer from 'gulp-autoprefixer'
 import cleanCss from 'gulp-clean-css'
 import { series, src, dest } from 'gulp'
+import { sccOutput } from '../../build/utils/path'
 
 function compile(){
   console.log('css compile')
@@ -23,7 +24,7 @@ function copyFont(){
 
 function copyFullStyle(){
   return src(resolve(__dirname,'./dist/**'))
-    .pipe(dest(resolve(__dirname,'../../dist/theme-chalk')))
+    .pipe(dest(resolve(sccOutput,'theme-chalk')))
 }
 
 export default series(

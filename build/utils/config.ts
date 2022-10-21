@@ -1,5 +1,5 @@
 import { resolve } from 'path'
-import { buildOutput } from './path'
+import { sccOutput } from './path'
 
 export const buildConfig = {
   esm: {
@@ -8,7 +8,7 @@ export const buildConfig = {
     ext: 'mjs',
     output: {
       name: 'es', // 打包到path目录（dist）下的哪个目录
-      path: resolve(buildOutput,"es") 
+      path: resolve(sccOutput,"es") 
     },
     bundle: 'shicc/es'
   },
@@ -18,7 +18,7 @@ export const buildConfig = {
     ext: 'js',
     output: {
       name: 'lib',
-      path: resolve(buildOutput,"lib")
+      path: resolve(sccOutput,"lib")
     },
     bundle: 'shicc/lib'
   }

@@ -1,9 +1,10 @@
 {
   "name": "@shicc/theme-chalk",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "element-scc chalk theme",
+  "main": "index.css",
   "scripts": {
+    "clean": "rimraf dist",
     "build": "gulp"
   },
   "keywords": [],

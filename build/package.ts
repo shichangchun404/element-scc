@@ -3,7 +3,7 @@ import { resolve } from 'path'
 import { series, parallel, src, dest } from 'gulp'
 import gulpTs from 'gulp-typescript'
 import { buildConfig } from './utils/config'
-import { buildOutput, compRoot, projectRoot, utilsRoot } from './utils/path'
+import { projectRoot, sccOutput } from './utils/path'
 import { withTaskName } from './utils'
 import { buildModules } from './utils/rollup'
 
@@ -23,7 +23,7 @@ export const buildUtils = (dirname, name)=> {
       }),
       
       withTaskName(`copy:${module} ${dirname}`, ()=>{
-        return src(`${output}/**`).pipe(dest(resolve(buildOutput, config.output.name, name)))
+        return src(`${output}/**`).pipe(dest(resolve(sccOutput, config.output.name, name)))
       })
     )
   })

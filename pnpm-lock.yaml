@@ -4,6 +4,7 @@ importers:
 
   .:
     specifiers:
+      '@pnpm/types': ^8.8.0
       '@rollup/plugin-commonjs': ^23.0.0
       '@rollup/plugin-node-resolve': ^15.0.0
       '@shicc/components': workspace:^1.0.0
@@ -16,6 +17,7 @@ importers:
       '@types/sass': ^1.43.1
       '@vitejs/plugin-vue': ^3.1.0
       '@vitejs/plugin-vue-jsx': ^2.0.1
+      D: ^1.0.0
       esbuild: ^0.15.11
       fast-glob: ^3.2.12
       gulp: ^4.0.2
@@ -24,6 +26,7 @@ importers:
       gulp-sass: ^5.1.0
       gulp-typescript: 6.0.0-alpha.1
       postcss: ^8.4.18
+      rimraf: ^3.0.2
       rollup: 2.78.0
       rollup-plugin-esbuild: ^4.10.1
       sass: ^1.55.0
@@ -33,9 +36,11 @@ importers:
       vite: ^3.1.0
       vue: ^3.2.40
     dependencies:
+      '@pnpm/types': 8.8.0
       '@shicc/components': link:packages/components
       '@shicc/theme-chalk': link:packages/theme-chalk
       '@shicc/utils': link:packages/utils
+      D: 1.0.0
       typescript: 4.8.4
       vue: 3.2.40
     devDependencies:
@@ -56,6 +61,7 @@ importers:
       gulp-sass: 5.1.0
       gulp-typescript: 6.0.0-alpha.1_typescript@4.8.4
       postcss: 8.4.18
+      rimraf: 3.0.2
       rollup: 2.78.0
       rollup-plugin-esbuild: 4.10.1_a3taah426puwmgafws6b5tpsym
       sass: 1.55.0
@@ -659,6 +665,11 @@ packages:
       fastq: 1.13.0
     dev: true
 
+  /@pnpm/types/8.8.0:
+    resolution: {integrity: sha512-IKUpbWRHDB9C4Yy4UeBpeYhU7eIsLj50jF5HNRUkbJnM0CWHPLxX9TGCI+ov8pgGeTP1t1g0GPDHD6en9D8LxQ==}
+    engines: {node: '>=14.6'}
+    dev: false
+
   /@rollup/plugin-commonjs/23.0.0_rollup@2.78.0:
     resolution: {integrity: sha512-JbrTRyDNtLQj/rhl7RFUuYXwQ2fac+33oLDAu2k++WD95zweyo28UAomLVA0JMGx4vmCa7Nw4T6k/1F6lelExg==}
     engines: {node: '>=14.0.0'}
@@ -1149,6 +1160,11 @@ packages:
     transitivePeerDependencies:
       - '@vue/composition-api'
       - vue
+    dev: false
+
+  /D/1.0.0:
+    resolution: {integrity: sha512-nQvrCBu7K2pSSEtIM0EEF03FVjcczCXInMt3moLNFbjlWx6bZrX72uT6/1uAXDbnzGUAx9gTyDiQ+vrFi663oA==}
+    deprecated: Package no longer supported. Contact support@npmjs.com for more info.
     dev: false
 
   /acorn/8.8.0:
@@ -3772,6 +3788,13 @@ packages:
   /reusify/1.0.4:
     resolution: {integrity: sha512-U9nH88a3fc/ekCF1l0/UP1IosiuIjyTh7hBvXVMHYgVcfGvt897Xguj2UOLDeI5BG2m7/uwyaLVT6fbtCwTyzw==}
     engines: {iojs: '>=1.0.0', node: '>=0.10.0'}
+    dev: true
+
+  /rimraf/3.0.2:
+    resolution: {integrity: sha512-JZkJMZkAGFFPP2YqXZXPbMlMBgsxzE8ILs4lMIX/2o0L9UBw9O/Y3o6wFw/i9YLapcUJWwqbi3kdxIPdC62TIA==}
+    hasBin: true
+    dependencies:
+      glob: 7.2.3
     dev: true
 
   /rollup-plugin-esbuild/4.10.1_a3taah426puwmgafws6b5tpsym:
